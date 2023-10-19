@@ -23,8 +23,6 @@ class FTCard2Fragment : Fragment() {
     ): View? {
         binding = FragmentFTCard2Binding.inflate(inflater, container, false)
 
-        ft2back = binding.root.findViewById(R.id.ft2back)
-
         ft2back.setOnClickListener {
             findNavController().popBackStack()
         }
@@ -33,6 +31,7 @@ class FTCard2Fragment : Fragment() {
             val bottomSheetFragment = MyBottomSheetFragment()
             bottomSheetFragment.show(childFragmentManager, bottomSheetFragment.tag)
         }
+
 
         return binding.root
     }
