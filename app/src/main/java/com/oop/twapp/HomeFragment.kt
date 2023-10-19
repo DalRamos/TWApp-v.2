@@ -86,7 +86,9 @@ class HomeFragment : Fragment() {
         val adapter = FTAdapter(cardItems) { item ->
             val action = when (item.id) {
                 "ftCard1" -> HomeFragmentDirections.actionHomeFragmentToFTCard1Fragment()
-                "ftCard2" -> HomeFragmentDirections.actionHomeFragmentToFTCard1Fragment()
+                "ftCard2" -> HomeFragmentDirections.actionHomeFragmentToFTCard2Fragment()
+                "ftCard3" -> HomeFragmentDirections.actionHomeFragmentToFTCard3Fragment()
+                "ftCard4" -> HomeFragmentDirections.actionHomeFragmentToFTCard4Fragment()
                 else -> null
             }
 

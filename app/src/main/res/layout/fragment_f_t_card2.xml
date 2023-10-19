@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#c594fe"
+    android:background="#fada9e"
     tools:context=".FTCard2Fragment">
 
     <ImageView
@@ -20,7 +20,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:src="@drawable/tabpicone"/>
+        android:src="@drawable/tabpictwo"/>
 
     <LinearLayout
         android:layout_width="match_parent"
