@@ -2,16 +2,15 @@ package com.oop.twapp
 
 import android.os.Bundle
 import android.text.TextUtils
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
-import androidx.navigation.Navigation
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.oop.twapp.databinding.FragmentSignupBinding
 
@@ -33,8 +32,9 @@ class SignupFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSignupBinding.inflate(inflater, container, false)
+
 
         uname = binding.root.findViewById(R.id.editTextTextEmailAddress)
         pword = binding.root.findViewById(R.id.editTextTextPassword)
@@ -56,22 +56,24 @@ class SignupFragment : Fragment() {
             val unametext = uname.text.toString()
             val pwordtext = pword.text.toString()
             val cpwordtext = cpword.text.toString()
-//            val fnametext = fname.text.toString()
-//            val lnametext = lname.text.toString()
-//            val mnametext = mname.text.toString()
-//            val addresstext = address.text.toString()
-//            val contactnumtext = contactnum.text.toString().toInt()
-            val savedata = db.insertdata(unametext, pwordtext)
-//            val infouser = db.userinfo(fnametext, lnametext, mnametext, addresstext, contactnumtext)
+            val fnametext = fname.text.toString()
+            val lnametext = lname.text.toString()
+            val mnametext = mname.text.toString()
+            val addresstext = address.text.toString()
+            val contactnumINT = contactnum.text.toString()
 
-            if (TextUtils.isEmpty(unametext) || TextUtils.isEmpty(pwordtext) || TextUtils.isEmpty(cpwordtext)){
-                Toast.makeText(this.context, "Add Username, Password and Confirm Password", Toast.LENGTH_SHORT).show()
+            Log.i("test", "clicked")
+
+
+            if (TextUtils.isEmpty(fnametext) || TextUtils.isEmpty(lnametext) || TextUtils.isEmpty(mnametext) || TextUtils.isEmpty(addresstext) || TextUtils.isEmpty(contactnumINT) || TextUtils.isEmpty(unametext) || TextUtils.isEmpty(pwordtext) || TextUtils.isEmpty(cpwordtext)){
+                Toast.makeText(this.context, "Complete all the information needed", Toast.LENGTH_SHORT).show()
             }
             else{
-                if (pwordtext.equals(cpwordtext)){
-                    if (savedata==true){
+                if (pwordtext == cpwordtext){
+                    val savedata = db.saveuserdata(fnametext, lnametext, mnametext, addresstext, contactnumINT, unametext, pwordtext, cpwordtext)
+                    if (savedata){
                         Toast.makeText(this.context, "Signup Successful", Toast.LENGTH_SHORT).show()
-                        Navigation.findNavController(it).navigate(R.id.action_signupFragment_to_loginFragment)
+                        findNavController().navigate(SignupFragmentDirections.actionSignupFragmentToLoginFragment())
                     }
                     else{
                         Toast.makeText(this.context, "User Exists", Toast.LENGTH_SHORT).show()
@@ -81,7 +83,6 @@ class SignupFragment : Fragment() {
                     Toast.makeText(this.context, "Password Not Match", Toast.LENGTH_SHORT).show()
                 }
             }
-//            db.userinfo(infouser)
 
         }
 
