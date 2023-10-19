@@ -92,7 +92,7 @@
         android:id="@+id/FTCard1Fragment"
         android:name="com.oop.twapp.FTCard1Fragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" >
+        tools:layout="@layout/fragment_f_t_card1" >
         <action
             android:id="@+id/action_FTCard1Fragment_to_homeFragment"
             app:destination="@id/homeFragment" />

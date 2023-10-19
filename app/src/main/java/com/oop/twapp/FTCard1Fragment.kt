@@ -8,20 +8,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
-import com.oop.twapp.databinding.FragmentCategoryBinding
+import com.oop.twapp.databinding.FragmentFTCard1Binding
 
 
 class FTCard1Fragment : Fragment() {
 
-    private lateinit var binding: FragmentCategoryBinding
+    private lateinit var binding: FragmentFTCard1Binding
     private lateinit var appointmentButton: Button
     private lateinit var ft1back: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentCategoryBinding.inflate(inflater, container, false)
+    ): View{
+        binding = FragmentFTCard1Binding.inflate(inflater, container, false)
 
         appointmentButton = binding.root.findViewById(R.id.appointmentButton)
         ft1back = binding.root.findViewById(R.id.ft1back)

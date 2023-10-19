@@ -23,6 +23,8 @@ class FTCard4Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentFTCard4Binding.inflate(inflater, container, false)
+        ft4back = binding.root.findViewById(R.id.ft4back)
+        appointmentButton = binding.root.findViewById(R.id.appointmentButton)
 
         ft4back.setOnClickListener {
             findNavController().popBackStack()
