@@ -35,27 +35,27 @@ class BottomNavFragment : Fragment() {
             when (it) {
                 R.id.nav_home -> {
                     openMainFragment()
-                    Log.i("test", "BottomNavigation")
+                    Log.i("test", "BotNavigation")
                 }
                 R.id.nav_tutor -> {
                     val favoriteFragment = TabFragment()
                     parentFragmentManager.beginTransaction()
                         .replace(R.id.frag_container_nav, favoriteFragment).commit()
-                    Log.i("test", "BottomNavigation2")
+                    Log.i("test", "BotNavigation2")
 
                 }
                 R.id.nav_reservation -> {
                     val profileFragment = ReservationFragment()
                     parentFragmentManager.beginTransaction()
                         .replace(R.id.frag_container_nav, profileFragment).commit()
-                    Log.i("test", "BottomNavigation3")
+                    Log.i("test", "BotNavigation3")
 
                 }
                 R.id.nav_settings -> {
                     val profileFragment = SettingFragment()
                     parentFragmentManager.beginTransaction()
                         .replace(R.id.frag_container_nav, profileFragment).commit()
-                    Log.i("test", "BottomNavigation4")
+                    Log.i("test", "BotNavigation4")
 
                 }
             }
