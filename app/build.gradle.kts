@@ -58,6 +58,9 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.3")
 
+    // Splash Screen
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
     // RecyclerView
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
 
