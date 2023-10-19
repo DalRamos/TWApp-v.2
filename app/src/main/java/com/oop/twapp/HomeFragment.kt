@@ -74,9 +74,9 @@ class HomeFragment : Fragment() {
 
         val cardItems = ArrayList<FTCardItem>()
         cardItems.add(FTCardItem("ftCard1", R.drawable.tabpicone, "Dr. Ronald Wayne\nArithmetic"))
-        cardItems.add(FTCardItem("ftCard2", R.drawable.tabpictwo, "Dr. Ronald Wayne\nArithmetic"))
-        cardItems.add(FTCardItem("ftCard3", R.drawable.tabpicthree, "Dr. Ronald Wayne\nArithmetic"))
-        cardItems.add(FTCardItem("ftCard4", R.drawable.tabpicfour, "Dr. Ronald Wayne\nArithmetic"))
+        cardItems.add(FTCardItem("ftCard2", R.drawable.tabpictwo, "Emily Davis\nLiterature"))
+        cardItems.add(FTCardItem("ftCard3", R.drawable.tabpicthree, "Nikki Sanchez\nChemistry"))
+        cardItems.add(FTCardItem("ftCard4", R.drawable.tabpicfour, "Benjamin Carter \nHistory"))
         cardItems.add(FTCardItem("ftCard5", R.drawable.tabpicfive, "Dr. Ronald Wayne\nArithmetic"))
         cardItems.add(FTCardItem("ftCard6", R.drawable.tabpic, "Dr. Ronald Wayne\nArithmetic"))
 
