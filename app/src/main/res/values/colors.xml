@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bgGreen">#2b7a0b</color>
+    <color name="btnColor">#c1d5a4</color>
+    <color name="lightGreen">#47c78e</color>
+    <color name="bwhite">#e1efe7</color>
+    <color name="bgTwo">#fcf4ec</color>
+    <color name="bgGreenish">#4a9db0</color>
+    <color name="bgGray">#a8b8bb</color>
+
+    <color name="chip_default_color">#FFFFFF</color>
+    <color name="chip_pressed_color">#c594fe</color>
+</resources>

@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Layer 1: Rounded Rectangle (background) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#c7b3cf" /> <!-- Background color -->
+            <corners android:radius="60dp" />
+        </shape>
+    </item>
+
+    <!-- Layer 2: Image -->
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/sub_eng"
+            android:width="35dp"
+            android:height="35dp"        />
+    </item>
+</layer-list>

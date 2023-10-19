@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FilledTextFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">#c594fe</item>
+        <item name="boxStrokeColor">#c594fe</item>
+        <item name="hintTextColor">#c594fe</item>
+        <item name="android:textColorHint">#c594fe</item>
+    </style>
+
+    <style name="FloatingLabel">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.oop.twapp.WelcomeFragment"
+        android:label="welcome"
+        tools:layout="@layout/welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.oop.twapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_bottomNavFragment"
+            app:destination="@id/bottomNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.oop.twapp.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.oop.twapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_tabFragment"
+            app:destination="@id/tabFragment">
+            <argument
+                android:name="tabIndex"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_homeFragment_to_bottomNavFragment"
+            app:destination="@id/bottomNavFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_FTCard1Fragment"
+            app:destination="@id/FTCard1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabFragment"
+        android:name="com.oop.twapp.TabFragment"
+        android:label="fragment_tab"
+        tools:layout="@layout/fragment_tab" >
+        <action
+            android:id="@+id/action_tabFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tabFragment_to_mathematicsFragment"
+            app:destination="@id/mathematicsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathematicsFragment"
+        android:name="com.oop.twapp.MathematicsFragment"
+        android:label="MathematicsFragment" />
+    <fragment
+        android:id="@+id/bottomNavFragment"
+        android:name="com.oop.twapp.BottomNavFragment"
+        android:label="BottomNavFragment" />
+    <fragment
+        android:id="@+id/FTCard1Fragment"
+        android:name="com.oop.twapp.FTCard1Fragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_FTCard1Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
