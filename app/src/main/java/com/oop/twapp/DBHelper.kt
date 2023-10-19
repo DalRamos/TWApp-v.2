@@ -5,55 +5,45 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-open class DBHelper(context: Context?): SQLiteOpenHelper(context, "Userdata", null, 1)  {
-    override fun onCreate(p0: SQLiteDatabase?) {
-        p0?.execSQL("create table Userdata (username TEXT primary key, password TEXT, fname TEXT, lname TEXT, mname TEXT, address TEXT, contactnum INT)")
+class DBHelper(context: Context?) : SQLiteOpenHelper(context, "Userdata", null, 12) {
+    override fun onCreate(db: SQLiteDatabase?) {
+        db?.execSQL("create table Userdatalist(FName TEXT, LName TEXT, MName TEXT, Address TEXT, Contact INT, Username TEXT primary key, Password TEXT, ConfirmPassword TEXT)")
     }
 
-    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-        p0?.execSQL("drop table if exists Userdata")
-
+    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+        db?.execSQL("drop table if exists Userdatalist")
     }
-    fun insertdata(username: String, password: String): Boolean {
-        val p0 = this.writableDatabase
+
+    fun saveuserdata(FName: String, LName: String, MName: String, Address: String, Contact: String, Username: String, Password: String, ConfirmPassword: String): Boolean {
+        val db = this.writableDatabase
         val cv = ContentValues()
-        cv.put("username", username)
-        cv.put("password", password)
+        cv.put("FName", FName)
+        cv.put("LName", LName)
+        cv.put("MName", MName)
+        cv.put("Address", Address)
+        cv.put("Contact", Contact)
+        cv.put("Username", Username)
+        cv.put("Password", Password)
+        cv.put("ConfirmPassword", ConfirmPassword)
 
-        val result = p0.insert("Userdata", null, cv)
-        if (result==-1 .toLong()){
-            return false
+        if (Password == ConfirmPassword){
+            val result = db.insert("Userdatalist", null, cv)
+            db.close()
+            return result != -1L
         }
-        return true
+        return false
     }
 
-    fun checkuserpass(username: String, password: String): Boolean {
-        val p0 = this.writableDatabase
-        val query = "select * from Userdata where username= '$username' and password= '$password'"
-        val cursor = p0.rawQuery(query, null)
-        if (cursor.count<=0){
+    fun checkuserpass(Username: String, Password: String): Boolean {
+        val db = this.writableDatabase
+        val query =
+            "select * from Userdatalist where username= '$Username' and password= '$Password'"
+        val cursor = db.rawQuery(query, null)
+        if (cursor.count <= 0) {
             cursor.close()
             return false
         }
         cursor.close()
         return true
-    } fun userinfo(fname: String, lname: String, mname: String, address: String, contactnum: Int) {
-        val p0 = this.writableDatabase
-        val conval = ContentValues()
-        conval.put("fname", fname)
-        conval.put("lname", lname)
-        conval.put("mname", mname)
-        conval.put("address", address)
-        conval.put("contactnum", contactnum)
-
-        val result2 = p0.insert("Userdata", null, conval)
-        p0.close()
-
-
     }
-
-    fun userinfo(fname: Unit) {
-
-    }
-
 }
