@@ -67,6 +67,12 @@
         <action
             android:id="@+id/action_homeFragment_to_FTCard4Fragment"
             app:destination="@id/FTCard4Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_FTCard5Fragment"
+            app:destination="@id/FTCard5Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_FTCard6Fragment"
+            app:destination="@id/FTCard6Fragment" />
     </fragment>
     <fragment
         android:id="@+id/tabFragment"
@@ -112,4 +118,14 @@
         android:name="com.oop.twapp.FTCard4Fragment"
         android:label="fragment_f_t_card4"
         tools:layout="@layout/fragment_f_t_card4" />
+    <fragment
+        android:id="@+id/FTCard5Fragment"
+        android:name="com.oop.twapp.FTCard5Fragment"
+        android:label="fragment_f_t_card5"
+        tools:layout="@layout/fragment_f_t_card5" />
+    <fragment
+        android:id="@+id/FTCard6Fragment"
+        android:name="com.oop.twapp.FTCard6Fragment"
+        android:label="fragment_f_t_card6"
+        tools:layout="@layout/fragment_f_t_card6" />
 </navigation>
