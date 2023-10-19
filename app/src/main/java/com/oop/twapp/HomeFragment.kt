@@ -77,8 +77,8 @@ class HomeFragment : Fragment() {
         cardItems.add(FTCardItem("ftCard2", R.drawable.tabpictwo, "Emily Davis\nLiterature"))
         cardItems.add(FTCardItem("ftCard3", R.drawable.tabpicthree, "Nikki Sanchez\nChemistry"))
         cardItems.add(FTCardItem("ftCard4", R.drawable.tabpicfour, "Benjamin Carter \nHistory"))
-        cardItems.add(FTCardItem("ftCard5", R.drawable.tabpicfive, "Dr. Ronald Wayne\nArithmetic"))
-        cardItems.add(FTCardItem("ftCard6", R.drawable.tabpic, "Dr. Ronald Wayne\nArithmetic"))
+        cardItems.add(FTCardItem("ftCard5", R.drawable.tabpicfive, "Sophia Reynolds\nArts"))
+        cardItems.add(FTCardItem("ftCard6", R.drawable.maththird, "Sarah Andersen\nStatistics"))
 
         val adapter = FTAdapter(cardItems) { item ->
             val action = when (item.id) {
@@ -86,6 +86,8 @@ class HomeFragment : Fragment() {
                 "ftCard2" -> HomeFragmentDirections.actionHomeFragmentToFTCard2Fragment()
                 "ftCard3" -> HomeFragmentDirections.actionHomeFragmentToFTCard3Fragment()
                 "ftCard4" -> HomeFragmentDirections.actionHomeFragmentToFTCard4Fragment()
+                "ftCard5" -> HomeFragmentDirections.actionHomeFragmentToFTCard5Fragment()
+                "ftCard6" -> HomeFragmentDirections.actionHomeFragmentToFTCard6Fragment()
                 else -> null
             }
 
