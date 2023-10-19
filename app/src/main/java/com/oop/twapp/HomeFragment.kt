@@ -12,10 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.oop.twapp.databinding.FragmentHomeBinding
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
-import com.ismaeldivita.chipnavigation.ChipNavigationBar
-import com.oop.twapp.TabFragmentDirections.Companion.actionTabFragmentToHomeFragment
+
 
 class HomeFragment : Fragment() {
 
@@ -32,7 +29,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View{
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         toMathematics = binding.root.findViewById(R.id.toMathematics)
@@ -95,6 +92,7 @@ class HomeFragment : Fragment() {
             action?.let {
                 findNavController().navigate(it)
             }
+
         }
 
 

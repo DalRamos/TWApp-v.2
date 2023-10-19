@@ -32,7 +32,7 @@ class LoginFragment : Fragment() {
     ): View {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
 
-        btnLogin = binding.root.findViewById(R.id.btnSignup)
+        btnLogin = binding.root.findViewById(R.id.btnLogin)
         signUp = binding.root.findViewById(R.id.signUp)
         loginBack = binding.root.findViewById(R.id.loginBack)
         edituser = binding.root.findViewById(R.id.editLogin)

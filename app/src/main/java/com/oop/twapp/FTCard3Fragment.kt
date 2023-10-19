@@ -21,8 +21,10 @@ class FTCard3Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View{
         binding = FragmentFTCard3Binding.inflate(inflater, container, false)
+        ft3back = binding.root.findViewById(R.id.ft3back)
+        appointmentButton = binding.root.findViewById(R.id.appointmentButton)
 
         ft3back.setOnClickListener {
             findNavController().popBackStack()

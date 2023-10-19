@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/jost"
-            android:text="John Smith has been teaching mathematics for over 10 years and is passionate about helping students understand and excel in the subject. He holds a Bachelor's degree in Mathematics and a Master's in Education. In his free time, he enjoys solving complex math problems and coaching the school's math club."
+            android:text="Dr. Ronald Wayne has been teaching mathematics for over 10 years and is passionate about helping students understand and excel in the subject. He holds a Bachelor's degree in Mathematics and a Master's in Education. In his free time, he enjoys solving complex math problems and coaching the school's math club."
             android:textColor="@color/black"
             android:textSize="18sp" />
 

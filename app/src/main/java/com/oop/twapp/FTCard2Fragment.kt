@@ -8,20 +8,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
-import com.oop.twapp.databinding.FragmentComputerBinding
 import com.oop.twapp.databinding.FragmentFTCard2Binding
 
 class FTCard2Fragment : Fragment() {
-
-    lateinit var binding: FragmentFTCard2Binding
-    lateinit var ft2back: ImageView
+    private lateinit var binding: FragmentFTCard2Binding
+    private lateinit var ft2back: ImageView
     private lateinit var appointmentButton: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentFTCard2Binding.inflate(inflater, container, false)
+        ft2back = binding.root.findViewById(R.id.ft2back)
+        appointmentButton = binding.root.findViewById(R.id.appointmentButton)
 
         ft2back.setOnClickListener {
             findNavController().popBackStack()
@@ -31,7 +31,6 @@ class FTCard2Fragment : Fragment() {
             val bottomSheetFragment = MyBottomSheetFragment()
             bottomSheetFragment.show(childFragmentManager, bottomSheetFragment.tag)
         }
-
 
         return binding.root
     }
