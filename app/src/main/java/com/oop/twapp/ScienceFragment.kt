@@ -19,14 +19,14 @@ class ScienceFragment : Fragment() {
 
         // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
-            CardItem("Emily Parker\nAlgebra", R.drawable.mathfirst),
-            CardItem("William Turner\nGeometry", R.drawable.mathsecond),
-            CardItem("Sarah Anderson\nStatistics", R.drawable.maththird),
-            CardItem("David Mitchell\nProbability", R.drawable.mathfourth),
-            CardItem("Michael Scott\nLinear Algebra", R.drawable.mathfifth),
-            CardItem("Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
-            CardItem("Lisa Chung\nCalculus", R.drawable.mathseventh),
-            CardItem("Olivia Theory\nNumber Theory", R.drawable.matheight),
+            CardItem("Emma Johnson\nBiology", R.drawable.scienceone),
+            CardItem("Mark Tahimik\nChemistry", R.drawable.sciencetwo),
+            CardItem("Ava Wilson\nPhysics", R.drawable.sciencethree),
+            CardItem("Olivia Davis\nFluid Mechanics", R.drawable.sciencefour),
+            CardItem("Carlos Carlos\nInorganic Chemisty", R.drawable.sciencefive),
+            CardItem("Sofia Andersen\nAstronomy", R.drawable.sciencesix),
+            CardItem("Isabella Martinez\nLife Science", R.drawable.scienceseven),
+            CardItem("Mia Turner\nOrganic Chemistry", R.drawable.scienceeight),
 
             )
 

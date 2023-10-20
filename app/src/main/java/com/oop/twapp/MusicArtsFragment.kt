@@ -19,14 +19,14 @@ class MusicArtsFragment : Fragment() {
 
         // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
-            CardItem("Emily Parker\nAlgebra", R.drawable.mathfirst),
-            CardItem("William Turner\nGeometry", R.drawable.mathsecond),
-            CardItem("Sarah Anderson\nStatistics", R.drawable.maththird),
-            CardItem("David Mitchell\nProbability", R.drawable.mathfourth),
-            CardItem("Michael Scott\nLinear Algebra", R.drawable.mathfifth),
-            CardItem("Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
-            CardItem("Lisa Chung\nCalculus", R.drawable.mathseventh),
-            CardItem("Olivia Theory\nNumber Theory", R.drawable.matheight),
+            CardItem("Emily Parker\nVisual Arts", R.drawable.artone),
+            CardItem("William Turner\nPerforming Arts", R.drawable.arttwo),
+            CardItem("Sarah Anderson\nMusic Theory and Composition:", R.drawable.artthree),
+            CardItem("David Mitchell\nArt History", R.drawable.artfour),
+            CardItem("Michael Scott\nDance ", R.drawable.artfive),
+            CardItem("Fredrick Sons\nFilm and Cinema", R.drawable.artsix),
+            CardItem("Lisa Chung\nLiterary Arts", R.drawable.artseven),
+            CardItem("Olivia Theory\nDesign and Architecture", R.drawable.arteight),
 
             )
 

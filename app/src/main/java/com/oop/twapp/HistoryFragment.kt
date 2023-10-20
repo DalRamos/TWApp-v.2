@@ -23,14 +23,14 @@ class HistoryFragment : Fragment() {
 
         // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
-            CardItem("Emily Parker\nAlgebra", R.drawable.mathfirst),
-            CardItem("William Turner\nGeometry", R.drawable.mathsecond),
-            CardItem("Sarah Anderson\nStatistics", R.drawable.maththird),
-            CardItem("David Mitchell\nProbability", R.drawable.mathfourth),
-            CardItem("Michael Scott\nLinear Algebra", R.drawable.mathfifth),
-            CardItem("Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
-            CardItem("Lisa Chung\nCalculus", R.drawable.mathseventh),
-            CardItem("Olivia Theory\nNumber Theory", R.drawable.matheight),
+            CardItem("Emily Parker\nPolitical History", R.drawable.hone),
+            CardItem("William Turner\nEconomic History", R.drawable.htwo),
+            CardItem("Sarah Anderson\nCultural History", R.drawable.hthree),
+            CardItem("David Mitchell\nEnvironmental History", R.drawable.hfour),
+            CardItem("Michael Scott\nGeography ", R.drawable.hfive),
+            CardItem("Fredrick Sons\nSociology", R.drawable.hsix),
+            CardItem("Lisa Chung\nMilitary History", R.drawable.hseven),
+            CardItem("Olivia Theory\nCivics and Government", R.drawable.height),
 
             )
 
