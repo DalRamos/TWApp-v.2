@@ -51,6 +51,7 @@
                     android:layout_width="35dp"
                     android:layout_height="28dp"
                     android:src="@drawable/notifff"
+                    android:visibility="invisible"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.957"

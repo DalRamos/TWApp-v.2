@@ -22,14 +22,14 @@ class ComputerFragment : Fragment() {
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
         val cardItems = listOf(
-            CardItem("Emily Parker\nAlgebra", R.drawable.mathfirst),
-            CardItem("William Turner\nGeometry", R.drawable.mathsecond),
-            CardItem("Sarah Anderson\nStatistics", R.drawable.maththird),
-            CardItem("David Mitchell\nProbability", R.drawable.mathfourth),
-            CardItem("Michael Scott\nLinear Algebra", R.drawable.mathfifth),
-            CardItem("Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
-            CardItem("Lisa Chung\nCalculus", R.drawable.mathseventh),
-            CardItem("Olivia Theory\nNumber Theory", R.drawable.matheight),
+            CardItem("Emily Parker\nSoftware Development", R.drawable.cone),
+            CardItem("William Turner\nArtificial Intelligence", R.drawable.ctwo),
+            CardItem("Sarah Anderson\nData Science", R.drawable.cthree),
+            CardItem("David Mitchell\nCybersecurity", R.drawable.cfour),
+            CardItem("Michael Scott\nDatabase Management", R.drawable.cfive),
+            CardItem("Fredrick Sons\nWeb Development", R.drawable.csix),
+            CardItem("Lisa Chung\nComputer Graphics", R.drawable.cseven),
+            CardItem("Olivia Theory\nNetwork Admin", R.drawable.ceight),
 
             )
 

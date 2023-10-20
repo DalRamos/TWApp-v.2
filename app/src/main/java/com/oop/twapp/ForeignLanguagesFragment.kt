@@ -22,14 +22,14 @@ class ForeignLanguagesFragment : Fragment() {
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
         val cardItems = listOf(
-            CardItem("Emily Parker\nAlgebra", R.drawable.mathfirst),
-            CardItem("William Turner\nGeometry", R.drawable.mathsecond),
-            CardItem("Sarah Anderson\nStatistics", R.drawable.maththird),
-            CardItem("David Mitchell\nProbability", R.drawable.mathfourth),
-            CardItem("Michael Scott\nLinear Algebra", R.drawable.mathfifth),
-            CardItem("Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
-            CardItem("Lisa Chung\nCalculus", R.drawable.mathseventh),
-            CardItem("Olivia Theory\nNumber Theory", R.drawable.matheight),
+            CardItem("Emily Parker\nLinguistics", R.drawable.lone),
+            CardItem("William Turner\nLanguage Learning and Teaching", R.drawable.ltwo),
+            CardItem("Sarah Anderson\nTranslation and Interpretation", R.drawable.lthree),
+            CardItem("David Mitchell\nCultural Studies", R.drawable.lfour),
+            CardItem("Michael Scott\nLiterature", R.drawable.lfive),
+            CardItem("Fredrick Sons\nDialectology", R.drawable.lsix),
+            CardItem("Lisa Chung\nLanguage History and Evolution", R.drawable.lseven),
+            CardItem("Olivia Theory\nApplied Linguistics", R.drawable.leight),
 
             )
 
