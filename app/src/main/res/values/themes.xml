@@ -7,4 +7,9 @@
 
     <style name="Theme.TWApp" parent="Base.Theme.TWApp" />
 
+    <style name="Theme.App.TWApp" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/chip_pressed_color</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/twa</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.TWApp</item>
+    </style>
 </resources>
