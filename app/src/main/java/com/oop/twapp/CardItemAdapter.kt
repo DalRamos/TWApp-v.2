@@ -8,9 +8,12 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-data class CardItem(val text: String, val imageResource: Int)
+data class CardItem(val id: Int, val text: String, val imageResource: Int)
 
-class CardItemAdapter(private val data: List<CardItem>) :
+class CardItemAdapter(
+    private val data: List<CardItem>,
+    private val itemClickListener: (Int) -> Unit
+) :
     RecyclerView.Adapter<CardItemAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -29,9 +32,13 @@ class CardItemAdapter(private val data: List<CardItem>) :
         val item = data[position]
         holder.imageView.setImageResource(item.imageResource)
         holder.textView.text = item.text
+        holder.cardView.setOnClickListener {
+            itemClickListener(item.id)
+        }
     }
 
     override fun getItemCount(): Int {
         return data.size
     }
 }
+

@@ -19,18 +19,36 @@ class MathematicsFragment : Fragment() {
 
         // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
-            CardItem("Emily Parker\nAlgebra", R.drawable.mathfirst),
-            CardItem("William Turner\nGeometry", R.drawable.mathsecond),
-            CardItem("Sarah Anderson\nStatistics", R.drawable.maththird),
-            CardItem("David Mitchell\nProbability", R.drawable.mathfourth),
-            CardItem("Michael Scott\nLinear Algebra", R.drawable.mathfifth),
-            CardItem("Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
-            CardItem("Lisa Chung\nCalculus", R.drawable.mathseventh),
-            CardItem("Olivia Theory\nNumber Theory", R.drawable.matheight),
+            CardItem(1, "Emily Parker\nAlgebra", R.drawable.mathfirst),
+            CardItem(2, "William Turner\nGeometry", R.drawable.mathsecond),
+            CardItem(3, "Sarah Anderson\nStatistics", R.drawable.maththird),
+            CardItem(4, "David Mitchell\nProbability", R.drawable.mathfourth),
+            CardItem(5, "Michael Scott\nLinear Algebra", R.drawable.mathfifth),
+            CardItem(6, "Fredrick Sons\nTrigonometry", R.drawable.mathsixth),
+            CardItem(7, "Lisa Chung\nCalculus", R.drawable.mathseventh),
+            CardItem(8, "Olivia Theory\nNumber Theory", R.drawable.matheight)
+        )
 
-            )
+        val adapter = CardItemAdapter(cardItems) { itemId ->
+            when (itemId) {
+                1 -> {
 
-        val adapter = CardItemAdapter(cardItems)
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, FTCard1Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                2 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+
+            }
+        }
+
         recyclerView.adapter = adapter
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columns grid
 

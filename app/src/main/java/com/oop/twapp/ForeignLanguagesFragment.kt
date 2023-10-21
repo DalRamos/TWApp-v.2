@@ -22,18 +22,37 @@ class ForeignLanguagesFragment : Fragment() {
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
         val cardItems = listOf(
-            CardItem("Emily Parker\nLinguistics", R.drawable.lone),
-            CardItem("William Turner\nLanguage Learning and Teaching", R.drawable.ltwo),
-            CardItem("Sarah Anderson\nTranslation and Interpretation", R.drawable.lthree),
-            CardItem("David Mitchell\nCultural Studies", R.drawable.lfour),
-            CardItem("Michael Scott\nLiterature", R.drawable.lfive),
-            CardItem("Fredrick Sons\nDialectology", R.drawable.lsix),
-            CardItem("Lisa Chung\nLanguage History and Evolution", R.drawable.lseven),
-            CardItem("Olivia Theory\nApplied Linguistics", R.drawable.leight),
+            CardItem(17,"Emily Parker\nLinguistics", R.drawable.lone),
+            CardItem(18,"William Turner\nLanguage Learning and Teaching", R.drawable.ltwo),
+            CardItem(19,"Sarah Anderson\nTranslation and Interpretation", R.drawable.lthree),
+            CardItem(20,"David Mitchell\nCultural Studies", R.drawable.lfour),
+            CardItem(21,"Michael Scott\nLiterature", R.drawable.lfive),
+            CardItem(22,"Fredrick Sons\nDialectology", R.drawable.lsix),
+            CardItem(23,"Lisa Chung\nLanguage History and Evolution", R.drawable.lseven),
+            CardItem(24,"Olivia Theory\nApplied Linguistics", R.drawable.leight),
 
             )
 
-        val adapter = CardItemAdapter(cardItems)
+        val adapter = CardItemAdapter(cardItems) { itemId ->
+            when (itemId) {
+                1 -> {
+                    // Open the first fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, FTCard1Fragment()) // Replace with the desired fragment
+                        .addToBackStack(null)
+                        .commit()
+                }
+                2 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, FTCard2Fragment()) // Replace with the desired fragment
+                        .addToBackStack(null)
+                        .commit()
+                }
+                // Add cases for other card items
+            }
+        }
+
         recyclerView.adapter = adapter
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columns grid
 
