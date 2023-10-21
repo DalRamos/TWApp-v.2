@@ -32,14 +32,12 @@ class MathematicsFragment : Fragment() {
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
                 1 -> {
-
                     requireActivity().supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, FTCard1Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 2 -> {
-                    // Open the second fragment
                     requireActivity().supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, FTCard2Fragment())
                         .addToBackStack(null)
