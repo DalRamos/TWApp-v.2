@@ -102,6 +102,9 @@
         <action
             android:id="@+id/action_FTCard1Fragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_FTCard1Fragment_to_myBottomSheetFragment"
+            app:destination="@id/myBottomSheetFragment" />
     </fragment>
     <fragment
         android:id="@+id/FTCard2Fragment"
@@ -128,4 +131,17 @@
         android:name="com.oop.twapp.FTCard6Fragment"
         android:label="fragment_f_t_card6"
         tools:layout="@layout/fragment_f_t_card6" />
+    <dialog
+        android:id="@+id/myBottomSheetFragment"
+        android:name="com.oop.twapp.MyBottomSheetFragment"
+        android:label="MyBottomSheetFragment" >
+        <action
+            android:id="@+id/action_myBottomSheetFragment_to_reservationFragment"
+            app:destination="@id/reservationFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/reservationFragment"
+        android:name="com.oop.twapp.ReservationFragment"
+        android:label="fragment_reservation"
+        tools:layout="@layout/fragment_reservation" />
 </navigation>
