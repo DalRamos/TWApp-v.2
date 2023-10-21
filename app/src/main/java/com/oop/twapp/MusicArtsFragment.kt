@@ -19,18 +19,37 @@ class MusicArtsFragment : Fragment() {
 
         // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
-            CardItem("Emily Parker\nVisual Arts", R.drawable.artone),
-            CardItem("William Turner\nPerforming Arts", R.drawable.arttwo),
-            CardItem("Sarah Anderson\nMusic Theory and Composition:", R.drawable.artthree),
-            CardItem("David Mitchell\nArt History", R.drawable.artfour),
-            CardItem("Michael Scott\nDance ", R.drawable.artfive),
-            CardItem("Fredrick Sons\nFilm and Cinema", R.drawable.artsix),
-            CardItem("Lisa Chung\nLiterary Arts", R.drawable.artseven),
-            CardItem("Olivia Theory\nDesign and Architecture", R.drawable.arteight),
+            CardItem(33,"Emily Parker\nVisual Arts", R.drawable.artone),
+            CardItem(34,"William Turner\nPerforming Arts", R.drawable.arttwo),
+            CardItem(35,"Sarah Anderson\nMusic Theory and Composition:", R.drawable.artthree),
+            CardItem(36,"David Mitchell\nArt History", R.drawable.artfour),
+            CardItem(37,"Michael Scott\nDance ", R.drawable.artfive),
+            CardItem(38,"Fredrick Sons\nFilm and Cinema", R.drawable.artsix),
+            CardItem(39,"Lisa Chung\nLiterary Arts", R.drawable.artseven),
+            CardItem(40,"Olivia Theory\nDesign and Architecture", R.drawable.arteight),
 
             )
 
-        val adapter = CardItemAdapter(cardItems)
+        val adapter = CardItemAdapter(cardItems) { itemId ->
+            when (itemId) {
+                1 -> {
+                    // Open the first fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, FTCard1Fragment()) // Replace with the desired fragment
+                        .addToBackStack(null)
+                        .commit()
+                }
+                2 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, FTCard2Fragment()) // Replace with the desired fragment
+                        .addToBackStack(null)
+                        .commit()
+                }
+                // Add cases for other card items
+            }
+        }
+
         recyclerView.adapter = adapter
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columns grid
 
