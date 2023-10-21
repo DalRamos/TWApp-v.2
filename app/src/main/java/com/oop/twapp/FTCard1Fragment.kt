@@ -31,7 +31,6 @@ class FTCard1Fragment : Fragment() {
             bottomSheetFragment.show(childFragmentManager, bottomSheetFragment.tag)
         }
 
-
         ft1back.setOnClickListener {
             findNavController().popBackStack()
         }
