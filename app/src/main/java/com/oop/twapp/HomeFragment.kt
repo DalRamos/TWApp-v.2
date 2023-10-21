@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
@@ -25,6 +26,7 @@ class HomeFragment : Fragment() {
     private lateinit var toLanguages: ConstraintLayout
     private lateinit var toSocialStudies: ConstraintLayout
     private lateinit var toComputer: ConstraintLayout
+    private lateinit var seeTwa: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -103,6 +105,7 @@ class HomeFragment : Fragment() {
 
         viewCourses = binding.root.findViewById(R.id.viewCourses)
         seeAllFT = binding.root.findViewById(R.id.seeAllFT)
+        seeTwa = binding.root.findViewById(R.id.seeTWA)
 
 
         viewCourses.setOnClickListener {
@@ -119,6 +122,11 @@ class HomeFragment : Fragment() {
 //            val bottomNav = activity?.findViewById<ChipNavigationBar>(R.id.bottom_nav_bar)
 //            bottomNav?.visibility = View.GONE
 //            bottomNav?.setItemSelected(R.id.nav_tutor)
+        }
+
+        seeTwa.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToTutorWaveFragment()
+            findNavController().navigate(action)
         }
 
         return binding.root

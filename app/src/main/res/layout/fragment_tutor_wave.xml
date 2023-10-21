@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorWaveFragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/twaBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor Waves App"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jost_medium"
+            android:textAlignment="center"
+            android:layout_marginStart="90dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor Waves App"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/jost_medium"
+            android:textColor="#c594fe"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jost"
+            android:padding="23dp"
+            android:text="Tutor Waves is an advanced mobile application designed to provide a seamless and hassle-free experience for users seeking world-class tutor reservation services. Our platform offers a convenient solution for booking highly qualified tutors, ensuring a professional and efficient approach to the educational support you require\n\nTutor Waves represents a cutting-edge mobile application that has been meticulously crafted to deliver a sophisticated and stress-free tutor reservation experience. Our platform offers users a convenient and efficient solution for securing the services of world-class tutors who are not only highly qualified but also dedicated to providing exceptional educational support. We prioritize professionalism and user-friendliness, ensuring that our users can access the finest educational resources with ease, making the journey towards academic success smoother and more effective."
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make an Appointment"
+            android:fontFamily="@font/jost_medium"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:textColor="#c594fe"
+            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check out our team"
+            android:fontFamily="@font/jost_medium"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:textColor="#c594fe"
+            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

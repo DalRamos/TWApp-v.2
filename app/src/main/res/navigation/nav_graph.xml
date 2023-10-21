@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_homeFragment_to_FTCard6Fragment"
             app:destination="@id/FTCard6Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tutorWaveFragment"
+            app:destination="@id/tutorWaveFragment" />
     </fragment>
     <fragment
         android:id="@+id/tabFragment"
@@ -144,4 +147,13 @@
         android:name="com.oop.twapp.ReservationFragment"
         android:label="fragment_reservation"
         tools:layout="@layout/fragment_reservation" />
+    <fragment
+        android:id="@+id/tutorWaveFragment"
+        android:name="com.oop.twapp.TutorWaveFragment"
+        android:label="fragment_tutor_wave"
+        tools:layout="@layout/fragment_tutor_wave" >
+        <action
+            android:id="@+id/action_tutorWaveFragment_to_tabFragment"
+            app:destination="@id/tabFragment" />
+    </fragment>
 </navigation>
