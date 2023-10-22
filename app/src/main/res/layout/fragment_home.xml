@@ -9,7 +9,8 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,6 +68,7 @@
                     android:id="@+id/imageView"
                     android:layout_width="360dp"
                     android:layout_height="120dp"
+                    android:focusable="true"
                     android:src="@drawable/gens"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -452,17 +454,17 @@
                     android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
             </ScrollView>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
                 android:background="@color/white"
-                android:layout_marginBottom="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -477,9 +479,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:fontFamily="@font/jost"
                     android:padding="15dp"
-                    android:layout_marginStart="5dp"
                     android:text="Tutor Waves is an advanced mobile application designed to provide a seamless and hassle-free experience for users seeking world-class tutor reservation services."
                     android:textColor="@color/black"
                     android:textSize="15sp" />
@@ -488,60 +490,81 @@
                     android:id="@+id/seeTWA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="See more"
                     android:layout_marginStart="23dp"
+                    android:layout_marginBottom="15dp"
                     android:fontFamily="@font/jost_medium"
+                    android:text="See more"
                     android:textColor="#c594fe"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="15dp"/>
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="360dp"
                 android:layout_height="100dp"
-                android:background="#c594fe"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:background="#c594fe">
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/baseline_work_history_24"
                     android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginStart="40dp"/>
+                    android:src="@drawable/baseline_work_history_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="My Appointments"
-                    android:fontFamily="@font/jost_medium"
-                    android:textSize="30sp"
-                    android:textColor="@color/white"
-                    android:textAlignment="center"
                     android:layout_gravity="center"
-                    />
+                    android:fontFamily="@font/jost_medium"
+                    android:text="My Appointments"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="vertical"
-                android:background="#cee2ff">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fan Arts By Students"
+                    android:textSize="20sp"
+                    android:layout_marginStart="22dp"
+                    android:fontFamily="@font/jost_medium"
+                    android:textColor="#c594fe"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/draw"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#cee2ff"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/aboutUs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/jost"
                     android:text="About our team"
-                    android:textSize="15sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"/>
-
+                    android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                    android:textColor="#c594fe"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -551,7 +574,6 @@
                     android:text="All Rights Reserved 2023"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
-
 
             </LinearLayout>
 
