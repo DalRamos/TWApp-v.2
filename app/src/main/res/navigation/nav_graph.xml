@@ -89,8 +89,6 @@
             android:id="@+id/action_tabFragment_to_mathematicsFragment"
             app:destination="@id/mathematicsFragment" />
         <action
-            android:id="@+id/action_tabFragment_self"
-            app:destination="@id/tabFragment" />
     </fragment>
     <fragment
         android:id="@+id/mathematicsFragment"
