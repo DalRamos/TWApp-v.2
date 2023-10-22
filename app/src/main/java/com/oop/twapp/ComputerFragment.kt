@@ -22,14 +22,14 @@ class ComputerFragment : Fragment() {
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
         val cardItems = listOf(
-            CardItem(9,"Emily Parker\nSoftware Development", R.drawable.cone),
-            CardItem(10,"William Turner\nArtificial Intelligence", R.drawable.ctwo),
-            CardItem(11,"Sarah Anderson\nData Science", R.drawable.cthree),
-            CardItem(12,"David Mitchell\nCybersecurity", R.drawable.cfour),
-            CardItem(13,"Michael Scott\nDatabase Management", R.drawable.cfive),
-            CardItem(14,"Fredrick Sons\nWeb Development", R.drawable.csix),
-            CardItem(15,"Lisa Chung\nComputer Graphics", R.drawable.cseven),
-            CardItem(16,"Olivia Theory\nNetwork Admin", R.drawable.ceight),
+            CardItem(9,"Miguel Silva\nSoftware Development", R.drawable.cone),
+            CardItem(10,"Pedro Santos\nArtificial Intelligence", R.drawable.ctwo),
+            CardItem(11,"Ayesha Gonzales\nData Science", R.drawable.cthree),
+            CardItem(12,"Lorna Cruz\nCyber Security", R.drawable.cfour),
+            CardItem(13,"Angela Reyes\nDatabase Management", R.drawable.cfive),
+            CardItem(14,"João Costa\nWeb Development", R.drawable.csix),
+            CardItem(15,"Ricardo Pereira\nComputer Graphics", R.drawable.cseven),
+            CardItem(16,"Luis Oliveira\nNetwork Admin", R.drawable.ceight),
 
             )
 
@@ -37,13 +37,49 @@ class ComputerFragment : Fragment() {
             when (itemId) {
                 9 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment())
+                        .replace(R.id.fragmentContainer, Com9Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                2 -> {
+                10 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Com10Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                11 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Com11Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                12 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Com12Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                13 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Com13Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                14 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Com14Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                15 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Com15Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                16 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Com16Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
