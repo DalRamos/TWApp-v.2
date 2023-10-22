@@ -17,7 +17,7 @@ class MathematicsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_mathematics, container, false)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        // Create a list of CardItem objects with text and image resources
+
         val cardItems = listOf(
             CardItem(1, "Emily Parker\nAlgebra", R.drawable.mathfirst),
             CardItem(2, "William Turner\nGeometry", R.drawable.mathsecond),

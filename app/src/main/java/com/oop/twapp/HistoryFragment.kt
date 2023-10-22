@@ -21,7 +21,6 @@ class HistoryFragment : Fragment() {
         binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
-        // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
             CardItem(25,"Emily Parker\nPolitical History", R.drawable.hone),
             CardItem(26,"William Turner\nEconomic History", R.drawable.htwo),
@@ -37,20 +36,19 @@ class HistoryFragment : Fragment() {
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
                 1 -> {
-                    // Open the first fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard1Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 2 -> {
                     // Open the second fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard2Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                // Add cases for other card items
+
             }
         }
 

@@ -36,25 +36,23 @@ class ForeignLanguagesFragment : Fragment() {
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
                 1 -> {
-                    // Open the first fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard1Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 2 -> {
                     // Open the second fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard2Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                // Add cases for other card items
             }
         }
 
         recyclerView.adapter = adapter
-        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columns grid
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
 
         return binding.root
     }
