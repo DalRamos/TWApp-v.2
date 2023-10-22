@@ -82,7 +82,7 @@ class MyBottomSheetFragment : BottomSheetDialogFragment() {
             }
             else{
                 if (reservedata){
-                    Toast.makeText(this.context, "You have successfully set up an appointment/n Go to your appointment page", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this.context, "You have successfully set up an appointment\n Go to your appointment page", Toast.LENGTH_SHORT).show()
 
                 }
             }
