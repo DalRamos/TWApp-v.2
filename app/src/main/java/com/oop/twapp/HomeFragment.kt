@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.oop.twapp.databinding.FragmentHomeBinding
 
 
+
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
@@ -107,6 +108,7 @@ class HomeFragment : Fragment() {
         seeAllFT = binding.root.findViewById(R.id.seeAllFT)
         seeTwa = binding.root.findViewById(R.id.seeTWA)
 
+        viewCourses.requestFocus()
 
         viewCourses.setOnClickListener {
             val action = HomeFragmentDirections.actionHomeFragmentToTabFragment(0)
@@ -128,6 +130,8 @@ class HomeFragment : Fragment() {
             val action = HomeFragmentDirections.actionHomeFragmentToTutorWaveFragment()
             findNavController().navigate(action)
         }
+
+
 
         return binding.root
     }
