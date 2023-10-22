@@ -17,7 +17,6 @@ class ScienceFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_science, container, false)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
             CardItem(41,"Emma Johnson\nBiology", R.drawable.scienceone),
             CardItem(42,"Mark Tahimik\nChemistry", R.drawable.sciencetwo),
@@ -33,20 +32,17 @@ class ScienceFragment : Fragment() {
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
                 1 -> {
-                    // Open the first fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard1Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 2 -> {
-                    // Open the second fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard2Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                // Add cases for other card items
             }
         }
 

@@ -17,7 +17,6 @@ class MusicArtsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_music_arts, container, false)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        // Create a list of CardItem objects with text and image resources
         val cardItems = listOf(
             CardItem(33,"Emily Parker\nVisual Arts", R.drawable.artone),
             CardItem(34,"William Turner\nPerforming Arts", R.drawable.arttwo),
@@ -33,20 +32,17 @@ class MusicArtsFragment : Fragment() {
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
                 1 -> {
-                    // Open the first fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard1Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 2 -> {
-                    // Open the second fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment()) // Replace with the desired fragment
+                        .replace(R.id.fragmentContainer, FTCard2Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                // Add cases for other card items
             }
         }
 
