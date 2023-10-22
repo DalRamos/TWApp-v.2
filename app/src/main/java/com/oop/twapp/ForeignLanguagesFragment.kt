@@ -1,14 +1,13 @@
 package com.oop.twapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.oop.twapp.databinding.FragmentForeignLanguagesBinding
-import com.oop.twapp.databinding.FragmentHomeBinding
 
 class ForeignLanguagesFragment : Fragment() {
 
@@ -22,29 +21,71 @@ class ForeignLanguagesFragment : Fragment() {
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
         val cardItems = listOf(
-            CardItem(17,"Emily Parker\nLinguistics", R.drawable.lone),
-            CardItem(18,"Ms. Emily Chen\nLanguage Learning and Teaching", R.drawable.ltwo),
-            CardItem(19,"Sarah Anderson\nTranslation and Interpretation", R.drawable.lthree),
-            CardItem(20,"David Mitchell\nCultural Studies", R.drawable.lfour),
-            CardItem(21,"Michael Scott\nLiterature", R.drawable.lfive),
-            CardItem(22,"Fredrick Sons\nDialectology", R.drawable.lsix),
-            CardItem(23,"Lisa Chung\nLanguage History and Evolution", R.drawable.lseven),
-            CardItem(24,"Olivia Theory\nApplied Linguistics", R.drawable.leight),
+            CardItem(17,"Maria Rodriguez\nLinguistics", R.drawable.lone),
+            CardItem(18,"Emily Chen\nLanguage and Teaching", R.drawable.ltwo),
+            CardItem(19,"Emily Hall\nDialectology", R.drawable.lthree),
+            CardItem(20,"Elizabeth King\nTranslation and Interpretation", R.drawable.lfour),
+            CardItem(21,"Sofia Scott\nCulture Studies", R.drawable.lfive),
+            CardItem(22,"Jonathan Miller\nLiterature", R.drawable.lsix),
+            CardItem(23,"Benjamin Carter\nLanguage History and Evolution", R.drawable.lseven),
+            CardItem(24,"Christopher Williams\nApplied Linguistics", R.drawable.leight),
 
             )
 
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
-                1 -> {
+                17 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment())
+                        .replace(R.id.fragmentContainer, Fl17Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                2 -> {
+                18 -> {
                     // Open the second fragment
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Fl18Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                19 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Fl19Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                20 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Fl20Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                21 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Fl21Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                22 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Fl22Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                23 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Fl23Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                24 -> {
+                    // Open the second fragment
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Fl24Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
