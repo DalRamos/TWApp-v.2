@@ -33,17 +33,52 @@ class MathematicsFragment : Fragment() {
             when (itemId) {
                 1 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment())
+                        .replace(R.id.fragmentContainer, Math1Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 2 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Math2Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-
+                3 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Math3Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                4 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Math4Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                5 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Math5Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                6 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Math6Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                7 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Math7Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                8 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, Math8Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
             }
         }
 
