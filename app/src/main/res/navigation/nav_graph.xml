@@ -88,6 +88,9 @@
         <action
             android:id="@+id/action_tabFragment_to_mathematicsFragment"
             app:destination="@id/mathematicsFragment" />
+        <action
+            android:id="@+id/action_tabFragment_to_scienceFragment"
+            app:destination="@id/scienceFragment" />
     </fragment>
     <fragment
         android:id="@+id/mathematicsFragment"
@@ -156,4 +159,8 @@
             android:id="@+id/action_tutorWaveFragment_to_tabFragment"
             app:destination="@id/tabFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/scienceFragment"
+        android:name="com.oop.twapp.ScienceFragment"
+        android:label="ScienceFragment" />
 </navigation>
