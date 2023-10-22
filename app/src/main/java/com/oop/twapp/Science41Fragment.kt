@@ -23,7 +23,7 @@ class Science41Fragment : Fragment() {
         binding = FragmentScience41Binding.inflate(layoutInflater, container, false)
 
         appoinmentButton = binding.root.findViewById(R.id.appointmentButton)
-        sci41back = binding.root.findViewById(R.id.ft1back)
+        sci41back = binding.root.findViewById(R.id.sci41back)
 
         appoinmentButton.setOnClickListener {
             val bottomSheetFragment = MyBottomSheetFragment()

@@ -86,7 +86,7 @@ class ScienceFragment : Fragment() {
         }
 
             recyclerView.adapter = adapter
-            recyclerView.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columns grid
+            recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
 
             return view
         }
