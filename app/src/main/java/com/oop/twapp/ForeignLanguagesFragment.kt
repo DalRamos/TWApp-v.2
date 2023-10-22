@@ -23,7 +23,7 @@ class ForeignLanguagesFragment : Fragment() {
 
         val cardItems = listOf(
             CardItem(17,"Emily Parker\nLinguistics", R.drawable.lone),
-            CardItem(18,"William Turner\nLanguage Learning and Teaching", R.drawable.ltwo),
+            CardItem(18,"Ms. Emily Chen\nLanguage Learning and Teaching", R.drawable.ltwo),
             CardItem(19,"Sarah Anderson\nTranslation and Interpretation", R.drawable.lthree),
             CardItem(20,"David Mitchell\nCultural Studies", R.drawable.lfour),
             CardItem(21,"Michael Scott\nLiterature", R.drawable.lfive),
