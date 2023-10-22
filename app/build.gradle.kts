@@ -73,6 +73,6 @@ dependencies {
     // TabLayout (for displaying tabs)
     implementation ("com.google.android.material:material:1.4.1")
 
-//    implementation ("com.google.android.youtube:youtube-android-player:1.2.2")
+
 
 }
