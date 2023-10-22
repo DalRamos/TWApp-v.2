@@ -22,38 +22,72 @@ class HistoryFragment : Fragment() {
         val recyclerView: RecyclerView = binding.root.findViewById(R.id.recyclerView)
 
         val cardItems = listOf(
-            CardItem(25,"Emily Parker\nPolitical History", R.drawable.hone),
-            CardItem(26,"William Turner\nEconomic History", R.drawable.htwo),
-            CardItem(27,"Sarah Anderson\nCultural History", R.drawable.hthree),
-            CardItem(28,"David Mitchell\nEnvironmental History", R.drawable.hfour),
-            CardItem(29,"Michael Scott\nGeography ", R.drawable.hfive),
-            CardItem(30,"Fredrick Sons\nSociology", R.drawable.hsix),
-            CardItem(31,"Lisa Chung\nMilitary History", R.drawable.hseven),
-            CardItem(32,"Olivia Theory\nCivics and Government", R.drawable.height),
+            CardItem(25,"Benjamin Smith\nPolitical History", R.drawable.hone),
+            CardItem(26,"William Anderson\nEconomic History", R.drawable.htwo),
+            CardItem(27,"Michael Bennett\nCultural History", R.drawable.hthree),
+            CardItem(28,"David Clark\nEnvironmental History", R.drawable.hfour),
+            CardItem(29,"John Mitchell\nGeography ", R.drawable.hfive),
+            CardItem(30,"Robert Wilson\nSociology", R.drawable.hsix),
+            CardItem(31,"William Taylor\nMilitary History", R.drawable.hseven),
+            CardItem(32,"Christopher White\nCivics and Government", R.drawable.height),
 
             )
 
         val adapter = CardItemAdapter(cardItems) { itemId ->
             when (itemId) {
-                1 -> {
+                25 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard1Fragment())
+                        .replace(R.id.fragmentContainer, History25Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-                2 -> {
-                    // Open the second fragment
+                26 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, History26Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
-
+                27 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, History27Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                28 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, History28Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                29 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, History29Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                30 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, History30Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                31 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, History31Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
+                32 -> {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, History32Fragment())
+                        .addToBackStack(null)
+                        .commit()
+                }
             }
         }
 
         recyclerView.adapter = adapter
-        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columns grid
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
 
         return binding.root
     }
