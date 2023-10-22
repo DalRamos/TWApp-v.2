@@ -41,44 +41,44 @@ class ScienceFragment : Fragment() {
 
                 42 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science42Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
 
                 43 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science43Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 44 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science44Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 45 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science45Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 46 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science46Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 47 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science47Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
                 48 -> {
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragmentContainer, FTCard2Fragment())
+                        .replace(R.id.fragmentContainer, Science48Fragment())
                         .addToBackStack(null)
                         .commit()
                 }
