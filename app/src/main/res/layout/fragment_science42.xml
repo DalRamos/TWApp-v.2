@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c6b2cf"
+    tools:context=".Science42Fragment">
+
+    <ImageView
+        android:id="@+id/sci42back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/sciencetwo"
+        android:background="#c6b2cf"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_box"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jost_medium"
+                android:text="Mr. Mark Tahimik"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jost"
+                android:text="Chemistry"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:fontFamily="@font/jost_medium"
+                android:text="456 Blue Avenue, Chemville, NY 67890"
+                android:textColor="#c594fe"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jost_medium"
+                android:text="Biography"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/jost"
+                android:text="Mr. Mark Tahimik is a renowned chemist known for his groundbreaking research in the field of analytical chemistry. He received his education from Chemville University and has authored numerous publications on chemical analysis techniques. Mark is passionate about mentoring young chemists and is often found in his lab, experimenting with novel chemical compounds."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/appointmentButton"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Make an appoinment"
+                android:backgroundTint="#c594fe"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -10,6 +10,7 @@
     <color name="bgTwo">#fcf4ec</color>
     <color name="bgGreenish">#4a9db0</color>
     <color name="bgGray">#a8b8bb</color>
+    <color name="yellow">#fbdb9e</color>
 
     <color name="chip_default_color">#FFFFFF</color>
     <color name="chip_pressed_color">#c594fe</color>
